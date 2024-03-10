@@ -1,0 +1,27 @@
+1.	Open your Mac terminal.
+
+2.	Install Homebrew.
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+3.	Install NVM using Homebew.
+
+brew install nvm
+
+4.	Create a directory for NVM.
+
+mkdir ~/.nvm
+
+5.	Add the directory to your profile file so you can run the nvm command from any directory.
+
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"' >> ~/.zshrc 
+echo '[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"' >> ~/.zshrc
+
+6.	To activate NVM you can either restart your terminal or reset your profile with the following command.
+
+source ~/.zshrc
+
+7.	To confirm your installation is successful you can check the version of NVM.
+
+nvm --version
