@@ -15,5 +15,5 @@ async function checkApplicationStatus() {
   }
 }
 
-// Run the check function every 30 seconds
+// Run the check function every 10 seconds
 setInterval(checkApplicationStatus, checkInterval)
