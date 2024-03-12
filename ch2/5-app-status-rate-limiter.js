@@ -1,6 +1,6 @@
 const os = require('node:os') // Import the os module
 const winston = require('winston')
-const createRequestCounter = require('./4-rate-limiter') // Import the rate limiter
+const createRequestCounter = require('./4-rate-limiter.js') // Import the rate limiter
 
 // Define the target URL and the interval in milliseconds
 const targetUrl = 'https://httpbin.org/get'
