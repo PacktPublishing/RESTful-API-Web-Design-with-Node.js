@@ -1,0 +1,16 @@
+The following steps install NVM on Linux.
+
+1.	Download the NVM install script. The following command will install NVM into the ~/.nvm folder and add the necessary scripts to your profile file which means you can run the nvm command from any directory.
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+2.	For the changes to take effect you should either restart your terminal or reset your profile file with the following command depending on your shell.
+
+source ~/.bashrc
+
+source ~/.zshrc
+
+source ~/.profile
+
+3.	Verify your installation by checking the version of NVM.
+nvm –version

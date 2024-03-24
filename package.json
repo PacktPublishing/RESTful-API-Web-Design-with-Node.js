@@ -2,10 +2,11 @@
   "dependencies": {
     "winston": "^3.12.0"
   },
+  "type": "module",
   "name": "restful-api-web-design-with-node",
   "description": "RESTful API Web Design with Node.js, published by Packt.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "1-app-status.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
