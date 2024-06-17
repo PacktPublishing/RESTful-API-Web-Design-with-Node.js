@@ -25,4 +25,4 @@ function createRequestCounter(maxRequestsPerMinute) {
   }
 }
 
-module.exports = createRequestCounter
+export { createRequestCounter }

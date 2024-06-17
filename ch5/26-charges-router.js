@@ -7,9 +7,9 @@ const router = express.Router()
  * Database records
  */
 const charges = [
-  { id: 12345, amount: 100 },
-  { id: 12346, amount: 30 },
-  { id: 12347, amount: 42 },
+  { id: 12345, amount: 100, date: new Date('2023-12-23') },
+  { id: 12346, amount: 30, date: new Date('2024-01-03') },
+  { id: 12347, amount: 4, date: new Date('2024-02-04') },
 ]
 
 /**
@@ -42,7 +42,9 @@ router.get('/:id', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  res.status(200).json({ message: 'All Charges retrieved' })
+  const startDate = new Date(req.query.startDate)
+  const filteredCharges = charges.filter((charge) => charge.date >= startDate)
+  res.status(200).json(filteredCharges)
 })
 
 router.get('/search', (req, res) => {
